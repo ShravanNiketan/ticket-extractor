@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Ticket Info Extractor",
+  "version": "2.2.0",
+  "description": "Extract Section, Row, and Seat information from ticket pages with auto-overlay",
+  
+  "permissions": [
+    "activeTab",
+    "*://securemypass.com/*"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["*://securemypass.com/tickets/1/*"],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Extract Ticket Info"
+  },
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ticket-extractor@yourname.com",
+      "strict_min_version": "91.0"
+    }
+  },
+  
+  "web_accessible_resources": [
+    "overlay.css"
+  ]
+}

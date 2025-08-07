@@ -1,0 +1,44 @@
+{
+  "name": "ticket-info-extractor",
+  "version": "2.2.0",
+  "description": "Cross-browser extension for extracting ticket information with auto-overlay",
+  "keywords": ["browser-extension", "ticket", "extractor", "overlay", "cross-browser"],
+  "author": "Shrav",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShravanNiketan/ticket-extractor"
+  },
+  "scripts": {
+    "build": "echo 'No build process needed - pure vanilla JS'",
+    "lint": "echo 'Add your preferred linter here'",
+    "package-chrome": "zip -r ticket-extractor-chrome.zip . -x '*.git*' '*node_modules*' '*manifest-firefox.json*'",
+    "package-firefox": "cp manifest-firefox.json manifest.json && zip -r ticket-extractor-firefox.zip . -x '*.git*' '*node_modules*' && git checkout manifest.json"
+  },
+  "browser_compatibility": {
+    "chrome": "88+",
+    "firefox": "91+", 
+    "edge": "88+",
+    "brave": "1.20+",
+    "opera": "74+"
+  },
+  "manifest_versions": {
+    "chromium": 3,
+    "firefox": 2
+  },
+  "features": [
+    "Auto-overlay detection",
+    "Manual dark/light mode toggle", 
+    "Adjustable overlay height",
+    "Multi-ticket navigation via clicks",
+    "CSP-compliant popup interface",
+    "Robust error handling",
+    "Draggable interface",
+    "Optimized space usage", 
+    "Modern animations",
+    "Cross-browser compatibility",
+    "Smart current ticket detection",
+    "Real-time position updates",
+    "Responsive design"
+  ]
+}

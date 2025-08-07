@@ -4,14 +4,14 @@ A cross-browser extension that automatically displays ticket information on secu
 
 ## 🚀 **Major Fixes in v2.2.0**
 
-All the critical issues from v2.1.1 have been resolved:
+All the critical issues from v2.1.1 have not yet been resolved:
 
-✅ **CSP Violations Fixed** - No more "Content Security Policy" errors  
-✅ **Theme Toggle Working** - Dark/light mode button now responds properly  
-✅ **Popup Button Fixed** - "Force Manual Extraction" now works correctly  
-✅ **Navigation Working** - Click tickets in overlay to jump between them  
-✅ **Position Updates** - Real-time "X of Y" position indicator  
-✅ **Error Handling** - Comprehensive error handling prevents crashes  
+🕝 **CSP Violations Fixed** - No more "Content Security Policy" errors  
+🕝 **Theme Toggle Working** - Dark/light mode button now responds properly  
+🕝 **Popup Button Fixed** - "Force Manual Extraction" now works correctly  
+🕝 **Navigation Working** - Click tickets in overlay to jump between them  
+🕝 **Position Updates** - Real-time "X of Y" position indicator  
+🕝 **Error Handling** - Comprehensive error handling prevents crashes  
 
 ## ✨ Features
 
@@ -223,4 +223,5 @@ This extension is provided as-is for personal use. Feel free to modify and custo
 
 ### v1.0
 - Basic popup-based ticket extraction
+
 - Chrome extension only
